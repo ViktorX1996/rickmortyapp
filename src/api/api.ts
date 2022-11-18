@@ -1,7 +1,7 @@
-import  axios from 'axios';
-import { ICharsResult, IAxiosDataGetAllChars } from '../redux/storage/IAxiosDataGetAllChars';
+import  axios from "axios";
+import { ICharsResult, IAxiosDataGetAllChars } from "../redux/storage/IAxiosDataGetAllChars";
 
-const BASE_URL = 'https://rickandmortyapi.com/api';
+const BASE_URL = "https://rickandmortyapi.com/api";
 
 const rickMortyCharsMainUrl = new URL(`${BASE_URL}/character`);
 

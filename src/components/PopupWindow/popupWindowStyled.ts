@@ -15,8 +15,8 @@ export const PopupWrapperS = styled.div<IPopupWrapperS>`
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: ${props => props.scale==='true' ? "1" : "0"};
-    pointer-events: ${props => props.scale==='true' ? "all" : "none"};
+    opacity: ${props => props.scale==="true" ? "1" : "0"};
+    pointer-events: ${props => props.scale==="true" ? "all" : "none"};
     transition:  0.5s ;
 `;
 export const PopupContentS = styled.div`

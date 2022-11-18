@@ -1,8 +1,8 @@
 {
-  "name": "rickmortywidget",
+  "name": "rickmortyapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ViktorX1996.github.io/rickmortywidget",
+  "homepage": "https://ViktorX1996.github.io/rickmortyapp",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.5",
