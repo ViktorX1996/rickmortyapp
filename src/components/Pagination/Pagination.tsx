@@ -60,7 +60,7 @@ export const Pagination: React.FunctionComponent<TProps> = ({
           }}
           pageRangeDisplayed={2}
           marginPagesDisplayed={2}
-          pageCount={count + 1}
+          pageCount={count ? count : 1}
           pageLinkClassName={"pageLink"}
           breakLabel="..."
           breakClassName={"pageItem"}
