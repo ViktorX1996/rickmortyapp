@@ -36,7 +36,6 @@ export const Pagination: React.FunctionComponent<TProps> = ({
     setCurrentItems(data.slice(itemOffset, endOffset));
     setCountPages(count);
   }, [itemOffset, itemsPerPage, data]);
-
   return (
     <>
       <MainApp currentItems={currentItems} />
@@ -61,14 +60,14 @@ export const Pagination: React.FunctionComponent<TProps> = ({
           }}
           pageRangeDisplayed={2}
           marginPagesDisplayed={2}
-          pageCount={count}
+          pageCount={count + 1}
           pageLinkClassName={"pageLink"}
           breakLabel="..."
           breakClassName={"pageItem"}
           breakLinkClassName={"pageLink"}
           containerClassName={"pagination"}
           activeClassName={"active"}
-          forcePage={count !== 0 ? 0 : count - 1}
+          forcePage={count === countPages ? 0 : count - 1}
         />
       </StyledPaginateContainer>
     </>
